@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/productDetails.css"; 
+import "../styles/ProductDetails.css"; 
 
 
 import img1 from "../assets/img1.avif";
