@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/productSpecs.css"; 
+import "../styles/ProductSpecs.css"; 
 
 const ProductSpecs = () => {
   const specs = [
