@@ -1,0 +1,137 @@
+/* 🔹 Full Footer Background - BLACK */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: black;
+  color: white;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* 🔹 Left Section */
+.footer-left {
+  width: 40%;
+}
+
+/* 🔹 HEATZ Logo */
+.footer-logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #00ffcc; /* Green Neon Effect */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* 🔹 Glow Animation */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+  100% { text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+}
+
+/* 🔹 Description Text */
+.footer-text {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* 🔹 Email Input Section */
+.email-container {
+  display: flex;
+  margin-top: 15px;
+  position: relative;
+}
+
+.email-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.send-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🔹 Hover Effect on Send Button */
+.send-button:hover {
+  transform: translateY(-50%) scale(1.2);
+  color: #00ffcc;
+}
+
+/* 🔹 Checkbox Styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.checkbox-container input {
+  margin-right: 5px;
+}
+
+/* 🔹 Right Section */
+.footer-right {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-column h4:hover {
+  color: #00ffcc;
+}
+
+.footer-column h4::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #00ffcc;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-column h4:hover::after {
+  width: 100%;
+}
+
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.footer-column li:hover {
+  color: #00ffcc;
+}

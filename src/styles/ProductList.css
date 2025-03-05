@@ -1,0 +1,79 @@
+/* 🔹 Parent container: enables smooth horizontal scrolling */
+.d-flex.flex-row.flex-nowrap {
+    gap: 15px; /* Smaller gap between cards */
+    padding-bottom: 10px;
+    overflow-x: auto; /* Enables smooth scrolling */
+    scrollbar-width: none; /* Hides scrollbar (Firefox) */
+    scroll-snap-type: x mandatory; /* Makes scrolling smoother */
+    scroll-padding: 10px;
+}
+
+ 
+  
+  /* 🔹 Hide scrollbar for Chrome, Safari */
+  .d-flex.flex-row.flex-nowrap::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* 🔹 Product card: smooth hover effect */
+  .product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* 🔹 Hover effect: Scale up and add shadow */
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* 🔹 Image styling */
+  .product-image {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* 🔹 Badge effect (Best Buy / Trending) */
+  .badge {
+    display: inline-block;
+    background: gold;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  /* 🔹 Icons styling */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+  
+  .container.text-white{
+    background-color: black;
+  }
+  body {
+    background-color: black;
+    color: white;
+}
+@media (max-width: 768px) {
+    .product-card {
+      min-width: 80vw;
+    }
+  }
+  
